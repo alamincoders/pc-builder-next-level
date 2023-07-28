@@ -7,7 +7,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <>
-      <div className="relative bg-white pb-[110px] pt-16">
+      <div className="relative bg-white pt-16">
         <div className="container mx-auto">
           <div className=" grid grid-cols-1 lg:grid-cols-2 items-center gap-6">
             <div className="w-full px-4">
