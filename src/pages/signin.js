@@ -4,8 +4,8 @@ import React from "react";
 
 const SignInPage = () => {
   return (
-    <div className="max-h-screen">
-      <section className="border-red-500 bg-gray-200 min-h-screen flex items-center justify-center">
+    <section className="max-h-screen">
+      <div className="border-red-500 bg-gray-200 min-h-screen flex items-center justify-center">
         <div className="bg-gray-100 p-5 flex rounded-2xl shadow-lg max-w-3xl">
           <div className="md:w-1/2 px-5">
             <h2 className="text-2xl font-bold text-[#002D74]">Signin</h2>
@@ -91,8 +91,8 @@ const SignInPage = () => {
             />
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
