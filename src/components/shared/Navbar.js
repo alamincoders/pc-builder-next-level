@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header className="bg-slate-50">
+    <section className="bg-slate-50">
       <nav className="container mx-auto">
         <div className="navbar">
           <div className="navbar-start">
@@ -17,21 +17,41 @@ const Navbar = () => {
               </label>
               <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                 <li>
-                  <a>Item 1</a>
+                  <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <a>Parent</a>
-                  <ul className="p-2">
-                    <li>
-                      <a>Submenu 1</a>
-                    </li>
-                    <li>
-                      <a>Submenu 2</a>
-                    </li>
-                  </ul>
+                  <details>
+                    <summary>Categories</summary>
+                    <ul className="p-2 lg:w-60 z-20">
+                      <li>
+                        <Link href={`/product/cpu`}>CPU / Processor</Link>
+                      </li>
+                      <li>
+                        <Link href={`/product/motherboard`}>Motherboard</Link>
+                      </li>{" "}
+                      <li>
+                        <Link href={`/product/ram`}>RAM</Link>
+                      </li>{" "}
+                      <li>
+                        <Link href={`/product/storage`}>Storage Device</Link>
+                      </li>{" "}
+                      <li>
+                        <Link href={`/product/power-supply`}>Power Supply Unit</Link>
+                      </li>{" "}
+                      <li>
+                        <Link href={`/product/monitor`}>Monitor</Link>
+                      </li>{" "}
+                      <li>
+                        <Link href={`/product/all`}>Other</Link>
+                      </li>
+                    </ul>
+                  </details>
                 </li>
                 <li>
-                  <a>Item 3</a>
+                  <Link href="/contact">Contact Us</Link>
+                </li>{" "}
+                <li>
+                  <Link href="/pcBuilder">PC Builder</Link>
                 </li>
               </ul>
             </div>
@@ -78,7 +98,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end space-x-8">
-            <Link href="/pcBuilder" className="btn btn-info">
+            <Link href="/pcBuilder" className="btn btn-info hidden lg:inline-block pt-4">
               PC Builder
             </Link>{" "}
             <Link href="/signin" className="btn btn-primary">
@@ -87,7 +107,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </header>
+    </section>
   );
 };
 
