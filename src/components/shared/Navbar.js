@@ -5,9 +5,9 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header>
-      <nav>
-        <div className="navbar bg-slate-50">
+    <header className="bg-slate-50">
+      <nav className="container mx-auto">
+        <div className="navbar">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -42,23 +42,38 @@ const Navbar = () => {
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
               <li>
-                <a>Item 1</a>
+                <Link href="/">Home</Link>
               </li>
               <li tabIndex={0}>
                 <details>
-                  <summary>Parent</summary>
-                  <ul className="p-2">
+                  <summary>Categories</summary>
+                  <ul className="p-2 lg:w-60 z-20">
                     <li>
-                      <a>Submenu 1</a>
+                      <Link href={`/product/cpu`}>CPU / Processor</Link>
                     </li>
                     <li>
-                      <a>Submenu 2</a>
+                      <Link href={`/product/motherboard`}>Motherboard</Link>
+                    </li>{" "}
+                    <li>
+                      <Link href={`/product/ram`}>RAM</Link>
+                    </li>{" "}
+                    <li>
+                      <Link href={`/product/storage`}>Storage Device</Link>
+                    </li>{" "}
+                    <li>
+                      <Link href={`/product/power-supply`}>Power Supply Unit</Link>
+                    </li>{" "}
+                    <li>
+                      <Link href={`/product/monitor`}>Monitor</Link>
+                    </li>{" "}
+                    <li>
+                      <Link href={`/product/all`}>Other</Link>
                     </li>
                   </ul>
                 </details>
               </li>
               <li>
-                <a>Item 3</a>
+                <Link href="/contact">Contact Us</Link>
               </li>
             </ul>
           </div>

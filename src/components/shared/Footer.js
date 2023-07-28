@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer class="bg-slate-50">
-      <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+      <div class="mx-auto container pb-8 pt-16 lg:pt-24">
         <div class="text-center">
           <h2 class="text-3xl font-extrabold text-gray-900 sm:text-5xl">Customise Your Product</h2>
 
