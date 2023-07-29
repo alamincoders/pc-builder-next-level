@@ -3,9 +3,10 @@ import { useRouter } from "next/router";
 import React from "react";
 
 const ProductCategory = ({ products, params }) => {
+  const router = useRouter();
   return (
     <div className="pb-20">
-      <FeaturedCard products={products} title="Products" categoryName={params?.category} />
+      <FeaturedCard products={products} title="Products" categoryName={router.query?.category} />
     </div>
   );
 };
@@ -29,7 +30,6 @@ export const getStaticProps = async ({ params }) => {
   return {
     props: {
       products,
-      params,
     },
   };
 };

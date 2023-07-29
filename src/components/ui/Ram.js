@@ -1,7 +1,8 @@
 import React from "react";
 
-const Ram = () => {
-  return <div>Ram</div>;
+const Ram = ({products}) => {
+  console.log(products)
+  return <div>Ram Details</div>;
 };
 
 export default Ram;

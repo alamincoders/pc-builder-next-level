@@ -1,7 +1,7 @@
 import React from "react";
 
-const CPU = () => {
-  return <div>CPU</div>;
+const CPU = ({ products }) => {
+  return <div>CPU Details</div>;
 };
 
 export default CPU;

@@ -1,7 +1,8 @@
 import React from "react";
 
-const MotherBoard = () => {
-  return <div>MotherBoard</div>;
+const MotherBoard = ({products}) => {
+  console.log(products)
+  return <div>MotherBoard Details</div>;
 };
 
 export default MotherBoard;
