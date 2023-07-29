@@ -8,7 +8,7 @@ export default function Home({ products }) {
       <header>
         <Hero />
       </header>
-      <FeaturedCard products={products} />
+      <FeaturedCard products={products} title="Featured Products" />
       <Categories products={products} />
     </main>
   );

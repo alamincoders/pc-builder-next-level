@@ -1,12 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import React from "react";
-const FeaturedCard = ({ products }) => {
+const FeaturedCard = ({ products, title, categoryName }) => {
   return (
     <div className="text-center mt-16">
       <div className="space-y-3">
-        <h2 className="text-3xl font-extrabold text-gray-900 sm:text-5xl">Featured Products</h2>
-        <p>Our Featured Products from random categories.</p>
+        <h2 className="text-3xl font-extrabold text-gray-900 sm:text-5xl">{title}</h2>
+        <p>
+          Our {title} from {categoryName ? categoryName : "random"} categories.
+        </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 container mx-auto mt-10">
         {products?.slice(0, 6).map((product) => (
