@@ -6,7 +6,7 @@ const Footer = () => {
     <footer class="bg-slate-50">
       <div class="mx-auto container pb-8 pt-16 lg:pt-24">
         <div class="text-center">
-          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-5xl">Customise Your Product</h2>
+          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-5xl">Build Your Custom Product</h2>
 
           <p class="mx-auto mt-4 max-w-sm text-gray-500">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum maiores ipsum eos temporibus ea nihil.

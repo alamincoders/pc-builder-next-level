@@ -1,8 +1,6 @@
-import Categories from '@/components/Categories'
-import FeaturedCard from '@/components/FeaturedCard'
-import Hero from '@/components/Hero'
-
-
+import Categories from "@/components/Categories";
+import FeaturedCard from "@/components/FeaturedCard";
+import Hero from "@/components/Hero";
 
 export default function Home({ products }) {
   return (
@@ -11,18 +9,17 @@ export default function Home({ products }) {
         <Hero />
       </header>
       <FeaturedCard products={products} />
-        <Categories products={products} />
+      <Categories products={products} />
     </main>
-  )
+  );
 }
 
-
-export async function getStaticProps() { 
-  const res = await fetch('https://pc-builder-json.vercel.app/products')
-  const products = await res.json()
+export async function getStaticProps() {
+  const res = await fetch("https://pc-builder-json.vercel.app/products");
+  const products = await res.json();
   return {
     props: {
       products: products,
     },
-  }
+  };
 }
