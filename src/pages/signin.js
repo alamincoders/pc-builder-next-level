@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { signIn } from "next-auth/react";
 import Link from "next/link";
 import React from "react";
 
@@ -56,7 +57,14 @@ const SignInPage = () => {
               <hr className="border-gray-500" />
             </div>
 
-            <button className="bg-white border py-2 w-full rounded-xl mt-5 flex justify-center items-center text-sm hover:scale-105 duration-300">
+            <button
+              onClick={() =>
+                signIn("google", {
+                  callbackUrl: "http://localhost:3000/",
+                })
+              }
+              className="bg-white border py-2 w-full rounded-xl mt-5 flex justify-center items-center text-sm hover:scale-105 duration-300"
+            >
               <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className="w-6 h-6" viewBox="0 0 48 48">
                 <defs>
                   <path

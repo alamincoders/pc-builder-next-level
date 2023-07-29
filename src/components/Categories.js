@@ -13,7 +13,7 @@ const Categories = ({ products }) => {
 
   const filteredProducts = showCard === "all" ? products : products?.filter((product) => product.category === showCard);
 
-  console.log(filteredProducts);
+  // console.log(filteredProducts);
 
   return (
     <section className="pt-16 pb-12 lg:pb-[90px] mt-16">
