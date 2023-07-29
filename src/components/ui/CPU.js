@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const CPU = ({ products }) => {
-  console.log(products);
+  // console.log(products);
   return (
     <div className="mt-16 p-2">
       <h2 className="text-3xl font-semibold mb-5 ">CPU Details</h2>

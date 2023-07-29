@@ -1,7 +1,7 @@
 import React from "react";
 
 const MotherBoard = ({products}) => {
-  console.log(products)
+  // console.log(products)
   return <div>MotherBoard Details</div>;
 };
 
