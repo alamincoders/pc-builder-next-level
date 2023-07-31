@@ -11,8 +11,8 @@ const ContactPage = () => {
                 <span className="block mb-4 text-base font-semibold text-primary">Contact Us</span>
                 <h2 className="mb-6 text-[32px] font-bold uppercase text-dark sm:text-[40px] lg:text-[36px] xl:text-[40px]">GET IN TOUCH WITH US</h2>
                 <p className="text-base leading-relaxed mb-9 text-body-color">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius tempor incididunt ut labore e dolore magna aliqua. Ut enim
-                  adiqua minim veniam quis nostrud exercitation ullamco
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maxime maiores officiis dolorem porro dolore corrupti cupiditate at
+                  odio ea deserunt laboriosam rem pariatur doloribus, accusamus quis autem exercitationem aliquid?
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
