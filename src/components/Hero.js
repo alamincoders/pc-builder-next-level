@@ -13,11 +13,11 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="">
                 <h1 className="mb-3 text-4xl font-bold leading-snug text-dark sm:text-[42px] lg:text-[40px] xl:text-[42px]">
-                  TechHouse Startup Website with <br /> PC Builder
+                  ULTIMATE PC Startup Website with <br /> PC Builder
                 </h1>
                 <p className="mb-8 max-w-[480px] text-base text-body-color">
-                  With TechHouse, business and students thrive together. Business can perfectly match their staffing to changing demand throughout the
-                  dayed.
+                  With ULTIMATE PC, business and students thrive together. Business can perfectly match their staffing to changing demand throughout
+                  the dayed.
                 </p>
                 <ul className="flex flex-wrap items-center">
                   <li>

@@ -2,8 +2,10 @@ import Image from "next/image";
 import React from "react";
 import logo from "../../assets/Logo.png";
 import Link from "next/link";
+import { useSession, signOut } from "next-auth/react";
 
 const Navbar = () => {
+  const { data: session } = useSession();
   return (
     <section className="bg-slate-50">
       <nav className="container mx-auto">
@@ -92,9 +94,15 @@ const Navbar = () => {
             <Link href="/pcBuilder" className="btn btn-info hidden lg:inline-block pt-4">
               PC Builder
             </Link>{" "}
-            <Link href="/signin" className="btn btn-primary">
-              Sign In
-            </Link>
+            {session?.user ? (
+              <button onClick={() => signOut()} className="btn btn-outline btn-success">
+                Sign Out
+              </button>
+            ) : (
+              <Link href="/signin" className="btn btn-primary">
+                Sign In
+              </Link>
+            )}
           </div>
         </div>
       </nav>

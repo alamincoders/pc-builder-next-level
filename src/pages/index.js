@@ -7,19 +7,28 @@ export default function Home({ products }) {
     <main>
       <header>
         <Hero />
+        <FeaturedCard products={products} title="Products" />
+        <Categories products={products} />
       </header>
-      <FeaturedCard products={products} title="Featured Products" />
-      <Categories products={products} />
     </main>
   );
 }
 
 export async function getStaticProps() {
-  const res = await fetch("https://pc-builder-json.vercel.app/products");
-  const products = await res.json();
-  return {
-    props: {
-      products: products,
-    },
-  };
+  try {
+    const res = await fetch("https://pc-builder-json.vercel.app/api/products");
+    const products = await res.json();
+    return {
+      props: {
+        products: products,
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return {
+      props: {
+        products: [],
+      },
+    };
+  }
 }
