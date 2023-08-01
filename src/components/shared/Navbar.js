@@ -83,7 +83,7 @@ const Navbar = () => {
                 </details>
               </li>
               <li>
-                <Link href="/">Contact us</Link>
+                <Link href="/contact">Contact us</Link>
               </li>
               <li>
                 <Link href="/">Support</Link>

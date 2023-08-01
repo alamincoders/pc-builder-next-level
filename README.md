@@ -1,38 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# PC Builder App
 
-First, run the development server:
+![Alt text](https://i.ibb.co/hg5JDDb/demo.png))
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Pc Builder is a web application that allows users to build their own custom PC. Users can select from a list of components and add them to their build. The app will then calculate the total cost of the build and display it to the user. Users can also save their build and view it later.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Backend URL
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+**Backend URL**: `https://pc-builder-json.vercel.app`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Frontend URL
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**Frontend URL**: `https://pc-builder-frontend-iota.vercel.app/`
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- Users can select from a list of components and add them to their build.
+- Custom PC builds can be saved and viewed later.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone the repository: `git clone https://github.com/your_username/your_app.git`
+2. Change directory: `cd your_app`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Technologies Used
+
+List the technologies, frameworks, and libraries used to build your app.
+
+- Frontend:
+  - Next.js
+  - Redux 
+  - DaisyUI
+- Backend:
+  - Node.js
+  - Express
+  - JSON Server
+- Authentication:
+  - NextAuth.js (goggle)
+- Deployment:
+  - Vercel
+
+
+
