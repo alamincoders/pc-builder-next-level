@@ -60,7 +60,7 @@ const SignInPage = () => {
             <button
               onClick={() =>
                 signIn("google", {
-                  callbackUrl: "http://localhost:3000/",
+                  callbackUrl: "https://pc-builder-next-level.vercel.app/",
                 })
               }
               className="bg-white border py-2 w-full rounded-xl mt-5 flex justify-center items-center text-sm hover:scale-105 duration-300"

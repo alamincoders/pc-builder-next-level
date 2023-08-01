@@ -113,37 +113,37 @@ const PcBuilder = ({ userSession, pcBuilded = [] }) => {
             </thead>
             <tbody>
               <tr>
-                <th>1</th>
+                <th>A</th>
                 <td>
                   <Link href={`/product/cpu_processor`}>CPU / Processor</Link>
                 </td>
               </tr>
               <tr>
-                <th>2</th>
+                <th>B</th>
                 <td>
                   <Link href={`/product/motherboard`}>Motherboard</Link>
                 </td>
               </tr>
               <tr>
-                <th>3</th>
+                <th>C</th>
                 <td>
                   <Link href={`/product/ram`}>RAM</Link>
                 </td>
               </tr>
               <tr>
-                <th>4</th>
+                <th>D</th>
                 <td>
                   <Link href={`/product/storage_device`}>Storage Device</Link>
                 </td>
               </tr>
               <tr>
-                <th>5</th>
+                <th>E</th>
                 <td>
                   <Link href={`/product/power_supply_unit`}>Power Supply Unit</Link>
                 </td>
               </tr>
               <tr>
-                <th>6</th>
+                <th>F</th>
                 <td>
                   <Link href={`/product/monitor`}>Monitor</Link>
                 </td>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import logo from "../../assets/Logo.png";
+import logo from "../../assets/logo.png";
 import Link from "next/link";
 import { useSession, signOut } from "next-auth/react";
 
