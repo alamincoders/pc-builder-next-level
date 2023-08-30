@@ -91,7 +91,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end space-x-8">
-            <Link href="/pcBuilder" className="btn btn-info hidden lg:inline-block pt-4">
+            <Link href="/pcBuilder" className="btn btn-outline hidden lg:inline-block pt-4">
               PC Builder
             </Link>{" "}
             {session?.user ? (
@@ -99,7 +99,7 @@ const Navbar = () => {
                 Sign Out
               </button>
             ) : (
-              <Link href="/signin" className="btn btn-primary">
+              <Link href="/signin" className="btn btn-accent">
                 Sign In
               </Link>
             )}

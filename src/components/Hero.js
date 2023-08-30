@@ -23,7 +23,7 @@ const Hero = () => {
                   <li>
                     <Link
                       href="/pcBuilder"
-                      className="inline-flex items-center justify-center px-6 py-4 text-base font-normal text-center text-white rounded-lg bg-primary hover:bg-opacity-90 sm:px-10 lg:px-8 xl:px-10"
+                      className="inline-flex items-center justify-center px-6 py-4 text-base font-normal text-center text-white rounded-lg bg-accent hover:bg-opacity-90 sm:px-10 lg:px-8 xl:px-10"
                     >
                       Get Started
                     </Link>

@@ -29,7 +29,7 @@ const Categories = ({ products }) => {
                 <button
                   onClick={() => handleCategory("all")}
                   className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
-                    showCard === "all" ? "activeClasses bg-primary text-white" : "inactiveClasses"
+                    showCard === "all" ? "activeClasses bg-accent text-white" : "inactiveClasses"
                   }`}
                 >
                   All
@@ -39,7 +39,7 @@ const Categories = ({ products }) => {
                 <button
                   onClick={() => handleCategory("cpu_processor")}
                   className={`inline-block  rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
-                    showCard === "cpu_processor" ? "activeClasses bg-primary text-white" : "inactiveClasses"
+                    showCard === "cpu_processor" ? "activeClasses bg-accent text-white" : "inactiveClasses"
                   }`}
                 >
                   CPU / Processor
@@ -49,7 +49,7 @@ const Categories = ({ products }) => {
                 <button
                   onClick={() => handleCategory("motherboard")}
                   className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
-                    showCard === "motherboard" ? "activeClasses bg-primary text-white" : "inactiveClasses"
+                    showCard === "motherboard" ? "activeClasses bg-accent text-white" : "inactiveClasses"
                   }`}
                 >
                   Motherboard
@@ -59,7 +59,7 @@ const Categories = ({ products }) => {
                 <button
                   onClick={() => handleCategory("ram")}
                   className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
-                    showCard === "ram" ? "activeClasses bg-primary text-white" : "inactiveClasses"
+                    showCard === "ram" ? "activeClasses bg-accent text-white" : "inactiveClasses"
                   }`}
                 >
                   RAM
@@ -69,7 +69,7 @@ const Categories = ({ products }) => {
                 <button
                   onClick={() => handleCategory("storage_device")}
                   className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
-                    showCard === "storage_device" ? "activeClasses bg-primary text-white" : "inactiveClasses"
+                    showCard === "storage_device" ? "activeClasses bg-accent text-white" : "inactiveClasses"
                   }`}
                 >
                   Storage Device
@@ -79,7 +79,7 @@ const Categories = ({ products }) => {
                 <button
                   onClick={() => handleCategory("power_supply_unit")}
                   className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
-                    showCard === "power_supply_unit" ? "activeClasses bg-primary text-white" : "inactiveClasses"
+                    showCard === "power_supply_unit" ? "activeClasses bg-accent text-white" : "inactiveClasses"
                   }`}
                 >
                   Power Supply Unit
@@ -89,7 +89,7 @@ const Categories = ({ products }) => {
                 <button
                   onClick={() => handleCategory("monitor")}
                   className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 ${
-                    showCard === "monitor" ? "activeClasses bg-primary text-white" : "inactiveClasses"
+                    showCard === "monitor" ? "activeClasses bg-accent text-white" : "inactiveClasses"
                   }`}
                 >
                   Monitor
@@ -114,7 +114,7 @@ const Categories = ({ products }) => {
         <div className="flex justify-center mt-8">
           <button
             onClick={() => setVisibleProducts((prevCount) => prevCount + 3)}
-            className={`btn btn-primary ${visibleProducts < filteredProducts?.length ? "block" : "hidden"}`}
+            className={`btn btn-accent ${visibleProducts < filteredProducts?.length ? "block" : "hidden"}`}
           >
             Load More
           </button>
@@ -140,11 +140,11 @@ const PortfolioCard = ({ showCard, category, ImageHref, title, button, buttonHre
           />
         </div>
         <div className="relative text-center">
-          <span className="block mb-2 text-sm font-semibold text-primary">{category}</span>
+          <span className="block mb-2 text-sm font-semibold text-accent">{category}</span>
           <h3 className="mb-4 text-xl font-bold text-dark">{title}</h3>
           <Link
             href={buttonHref}
-            className="inline-block py-3 text-sm font-semibold transition border rounded-md px-7 text-body-color hover:border-primary hover:bg-primary hover:text-white"
+            className="inline-block py-3 text-sm font-semibold transition border rounded-md px-7 text-body-color hover:border-accent hover:bg-accent hover:text-white"
           >
             {button}
           </Link>

@@ -22,7 +22,7 @@ const FeaturedCard = ({ products, title, categoryName }) => {
                 />
               </div>
               <div className="card-body">
-                <div className="badge badge-secondary">{product.category}</div>
+                <div className="badge badge-success">{product.category}</div>
                 <h2 className="card-title">{product.productName.slice(0, 30)}...</h2>
 
                 <div className="card-actions mt-2">

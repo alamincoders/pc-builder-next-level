@@ -14,7 +14,7 @@ const Footer = () => {
 
           <Link
             href="/pcBuilder"
-            className="mt-8 inline-block rounded-full border border-primary px-12 py-3 text-sm font-medium text-primary hover:bg-primary hover:text-white focus:outline-none focus:ring active:bg-indigo-500"
+            className="mt-8 inline-block rounded-full border border-accent px-12 py-3 text-sm font-medium text-accent hover:bg-accent hover:text-white focus:outline-none focus:ring active:bg-indigo-500"
           >
             PC Builder
           </Link>
