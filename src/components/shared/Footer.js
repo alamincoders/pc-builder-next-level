@@ -9,7 +9,7 @@ const Footer = () => {
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-5xl">Build Your ULTIMATE PC</h2>
 
           <p className="mx-auto mt-4 max-w-sm text-gray-500">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum maiores ipsum eos temporibus ea nihil.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ipsa nisi libero, deserunt illo asperiores earum numquam qui vel. Est!
           </p>
 
           <Link
